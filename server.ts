@@ -2082,4 +2082,7 @@ async function startServer() {
   });
 }
 
-startServer().catch(console.error);
+startServer().catch((err) -> {
+  console.error(err);
+  process.exit(1);
+});
