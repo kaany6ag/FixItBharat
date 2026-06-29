@@ -1,14 +1,10 @@
-FROM node:18-alpine as build
+FROM node:20-alpine
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci --legacy-peer-deps
+RUN npm install
 COPY . .
 RUN npm run build
-
-FROM node:18-alpine
-RUN npm install -g serve
-WORKDIR /app
-COPY --from=build /app/build .
-ENV PORT=8080
 EXPOSE 8080
-CMD ["serve", "-s", ".", "-l", "8080"]
+ENV PORT=8080
+ENV NODE_ENV=production
+CMD ["npx", "tsx", "server.ts"]
