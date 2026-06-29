@@ -1,0 +1,6 @@
+{
+  "name": "FixItBharat",
+  "description": "An AI-powered civic issue reporting platform for Indian citizens with real-time mapping, gamification, and department performance scorecards.",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
