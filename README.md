@@ -3,7 +3,7 @@
 Bharat ka apna civic intelligence platform
 
 ## Live Demo
-[Click here to view](YOUR_CLOUD_RUN_URL)
+[Click here to view](https://fixitbharat-149809916444.us-west1.run.app)
 
 ## Problem Statement
 Community Hero — Hyperlocal Problem Solver
